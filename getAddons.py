@@ -53,7 +53,7 @@ def feth_crawlURLs(url, driver_index, LOCK):
         toCrawl += urls
     return None
 
-MAX_WORKERS = 8
+MAX_WORKERS = 30
 drivers = [{'driver': webdriver.Chrome(options=chrome_options),
             'available': True } for i in range(MAX_WORKERS)]
 
